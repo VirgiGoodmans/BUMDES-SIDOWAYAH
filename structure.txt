@@ -1,0 +1,217 @@
+BUMDES-app/
+├── app/
+│	├── Http/
+│	│	├── Controllers/
+│	│	│	├── AdminController.php
+│	│	│	├── AuthController.php
+│	│	│	├── Controller.php
+│	│	│	├── FasilitasController.php
+│	│	│	├── HomeController.php
+│	│	│	├── NewsController.php
+│	│	│	├── PaketKegiatanController.php
+│	│	│	├── PemesananController.php
+│	│	│	└── WisataController.php
+│	│	└── Middleware/
+│	│	│	├── AdminMiddleware.php
+│	│	│	└── AuthMiddleware.php
+│	├── Models/
+│	│	├── Fasilitas.php
+│	│	├── News.php
+│	│	├── PaketKegiatan.php
+│	│	├── Pemesanan.php
+│	│	├── Spot.php
+│	│	├── User.php
+│	│	├── Wisata.php
+│	│	└── Kegiatan.php(hilang, tolong buatkan ulang)
+│	└── Providers/
+│	│	└── AppServiceProvidr.php
+├── bootstrap/
+│	├── cache/
+│	│	├── .gitignore
+│	│	├── config.php
+│	│	├── packages.php
+│	│	├── routes-v7.php
+│	│	└── services.php
+│	├── app.php
+│	└── providers.php
+├── config/
+│	├── app.php
+│	├── auth.php
+│	├── cache.php
+│	├── database.php
+│	├── filesystems.php
+│	├── logging.php
+│	├── mail.php
+│	├── queue.php
+│	├── services.php
+│	└── session.php
+├── database/
+│	├── factories/
+│	│	└── UserFactory.php
+│	├── migrations/
+│	│	├── 2024_10_17_000000_create_paket_kegiatan_table.php
+│	│	├── 2024_10_17_000001_create_users_table.php
+│	│	├── 2024_10_17_000002_create_wisata_table.php
+│	│	├── 2024_10_17_000003_create_news_table.php
+│	│	├── 2024_10_17_000004_create_feedback_table.php
+│	│	├── 2024_10_17_000005_create_kegiatan_table.php
+│	│	├── 2024_10_17_000006_add_tipe_to_paket_kegiatan_table.php
+│	│	├── 2024_10_17_000007_create_fasilitas_table.php
+│	│	├── 2024_10_17_000008_create_spot_table.php
+│	│	├── 2024_10_17_000009_create_pemesanan_table.php
+│	│	└── 2024_10_20_124951_create_sessions_table.php
+│	├── seeders/
+│	│	└── DatabaseSeeder.php
+│	├── seeds/
+│	│	├── NewsSeeder.php
+│	│	├── PaketKegiatanSeeder.php
+│	│	├── SpotSeeder.php
+│	│	├── UserSeeder.php
+│	│	└── WisataSeeder.php
+│	├── .gitignore
+│	└── database.sqlite
+├── public/
+│	├── css/
+│	│	└── app.css
+│	├── images/
+│	│	├── BUMDES-Sidowayah.ico
+│	│	├── BUMDES-Sidowayah.png
+│	│	├── EventSlideBanner_2024_10_11_0000.png
+│	│	├── EventSlideBanner_2024_10_11_0001.png
+│	│	├── EventSlideBanner_2024_10_11_0002.png
+│	│	├── EventSlideBanner_2024_10_11_0003.png
+│	│	├── ProfileKDS.png
+│	│	├── ProfileKemanten.png
+│	│	├── ProfileSiblarak.png
+│	│	└── SidowayahMap.png
+│	├── uploads/
+│	├── .htaccess
+│	├── favicon.ico
+│	├── index.php
+│	└── robots.txt
+├── resources/
+│	├── js/
+│	│	├── app.js
+│	│	├── bootstrap.js
+│	│	└── views/
+│	│	│	├── admin/
+│	│	│	│	├── dashboard.blade.php
+│	│	│	│	├── manage_paket_kegiatan.blade.php
+│	│	│	│	├── manage_pemasanan.blade.php
+│	│	│	│	├── manage_spot.blade.php
+│	│	│	│	└── manage_wisata.blade.php
+│	│	│	├── auth/
+│	│	│	│	├── login.blade.php
+│	│	│	│	└── register.blade.php
+│	│	│	├── layout/
+│	│	│	│	└── app.blade.php
+│	│	│	├── news/
+│	│	│	│	├── create.blade.php
+│	│	│	│	├── edit.blade.php
+│	│	│	│	├── index.blade.php
+│	│	│	│	└── show.blade.php
+│	│	│	├── pemesanan/
+│	│	│	│	├── index.blade.php
+│	│	│	│	├── show.blade.php
+│	│	│	│	└── success.blade.php
+│	│	│	└── wisata/
+│	│	│	│	├── kampung_dolanan.blade.php
+│	│	│	│	├── kemanten.blade.php
+│	│	│	│	├── show.blade.php
+│	│	│	│	├── siblarak.blade.php
+│	│	│	│	└── umkm_lokal.blade.php
+│	│	│	├── 404.blade.php
+│	│	│	├── home.blade.php
+│	│	│	├── news.blade.php
+│	│	│	├── pemesanan.blade.php
+│	│	│	├── profile.blade.php
+│	│	│	└── welcome.blade.php
+├── routes/
+│	├── console.php
+│	└── web.php
+├── storage/
+│	├── app/
+│	│	├── private/
+│	│	│	└── .gitignore
+│	│	├── public/
+│	│	│	└── .gitignore
+│	│	└── .gitignore
+│	├── framework/
+│	│	├── cache/
+│	│	│	├── data/
+│	│	│	│	└── .gitignore
+│	│	│	└── .gitignore
+│	│	├── sessions/
+│	│	│	└── .gitignore
+│	│	├── testing/
+│	│	│	└── .gitignore
+│	│	├── views/
+│	│	│	├── .gitignore
+│	│	│	├── 6a112c28901c3b4dcae529affe4d269c.php
+│	│	│	├── 259a6831d6a0ca9db3f880a970197eba.php
+│	│	│	├── 971239e73dab546b29e2ac874c4541e3.php
+│	│	│	└── f83f527826b92752638a6faf9e394eba.php
+│	│	└── .gitignore
+│	└── logs/
+│	│	├── .gitignore
+│	│	└── laravel.txt
+├── tests/
+│	├── Freature/
+│	│	└── ExampleTest.php
+│	├── Unit/
+│	│	└── ExampleTest.php
+│	└── TestCase.php
+├── vendor/
+│	├── bin/
+│	├── brick/
+│	├── carbonphp/
+│	├── composer/
+│	├── dflydev/
+│	├── doctrine/
+│	├── dragonmantank/
+│	├── egulias/
+│	├── fakerphp/
+│	├── filp/
+│	├── fruitcake/
+│	├── graham-campbell/
+│	├── guzzlehttp/
+│	├── hamcrest/
+│	├── laravel/
+│	├── league/
+│	├── mockery/
+│	├── monolog/
+│	├── myclabs/
+│	├── nesbot/
+│	├── nette/
+│	├── nikic/
+│	├── nunomaduro/
+│	├── phar-io/
+│	├── phpoption/
+│	├── phpunit/
+│	├── psr/
+│	├── psy/
+│	├── ralouphie/
+│	├── ramsey/
+│	├── sebastian/
+│	├── symfony/
+│	├── theseer/
+│	├── tijsverkoyen/
+│	├── vlucas/
+│	├── voku/
+│	├── webmozart/
+│	└── autoload.php
+├── .editorconfig
+├── .env
+├── .env.example
+├── .gitattributes
+├── .gitignore
+├── artisan
+├── composer.json
+├── composer.lock
+├── package.json
+├── phpunit.xml
+├── postcss.config.js
+├── README.md
+├── structure.txt
+├── tailwind.config.js
+└── vite.config.js
