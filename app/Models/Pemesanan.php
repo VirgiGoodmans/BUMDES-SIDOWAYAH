@@ -14,6 +14,10 @@ class Pemesanan extends Model
     {
         return $this->belongsTo(Spot::class);
     }
+    public function paketTambahan()
+    {
+        return $this->belongsToMany(PaketTambahan::class, 'pemesanan_paket_tambahan');
+    }
 
     public function user()
     {

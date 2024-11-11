@@ -7,12 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 class Fasilitas extends Model
 {
     protected $fillable = [
-        'nama_fasilitas', 'deskripsi', 'paket_kegiatan_id'
+        'nama_fasilitas', 'deskripsi', 'paket_kegiatan_id', 'wisata_id', 'harga'
     ];
 
-    // Relasi dengan PaketKegiatan
     public function paketKegiatan()
     {
         return $this->belongsTo(PaketKegiatan::class);
+    }
+
+    public function wisata()
+    {
+        return $this->belongsTo(Wisata::class);
     }
 }
